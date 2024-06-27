@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Recuperar Senha</title>
+    <link rel="stylesheet" href="./styles-recuperar_senha.css" />
+  </head>
+
+  <body>
+    <div id="recuperar_senha">
+      <form class="card" id="recoverForm" action="#">
+        <div class="card-header">
+          <h2>Recuperar senha</h2>
+        </div>
+
+        <div class="card-content">
+          <div class="card-content-area">
+            <label for="input_user">Usuário</label>
+            <input id="input_user" type="text" />
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <input id="button" class="submit" type="submit" value="Recuperar" />
+        </div>
+      </form>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("recoverForm");
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          console.log(event);
+        });
+      });
+    </script>
+  </body>
+</html>
